@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Gallery</title>
+    <style>
+      .gallery {
+        display: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="ShowGallery()">Show Gallery</button>
+
+  <div class="Gallery" id="myGallery">
+    <img src="images/1.webp" alt="Image 1">
+    <img src="images/2.webp" alt="Image 2">
+    <img src="images/3.webp" alt="Image 3">
+    <img src="images/4.gif" alt="Image 3">
+  </div>
+
+  <script>
+    function ShowGallery() {
+      var gallery = document.getElementById("myGallery");
+      if (gallery.style.display === "none") {
+        gallery.style.display = "grid"; // Mostrar la galería al hacer clic en el botón
+      } else {
+        gallery.style.display = "none"; // Ocultar la galería si ya está visible
+      }
+    }
+  </script>
+   <header class = "header">
+    <div class = "menu container">
+        <a href="#" class="logo">CANON</a>
+        <input type="chechbox" id="menu"/>
+        <label for="menu">
+            <img src="images/logo.jpg" class="menu-icono" alt="menu">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Accesories</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header-content container">
+        <div class="header.txt">
+            <h1>Buy your <span>camera</span> <br>here</h1>
+            <p>
+            Canon Canada has been the leading provider of consumer, 
+            business and professional digital imaging innovation. 
+            Technology continuously changes, but our commitment to 
+            delivering cutting-edge solutions and exceptional customer 
+            service never does. Our team takes on real problems and 
+            finds solutions that not only enhance the Canon customer 
+            experience but also excite us to come to work every single day.
+            </p>
+            
+        </div>
+    </div>
+
+</header>
+
+<section class="Most popular container">
+
+    <h2>Pupular Accesories</h2>
+
+    <div class="popular-content">
+        <img src="images/canonet-28-1.webp" alt="">
+        <img src="images/canonet-28-11.webp" alt="">
+        <img src="images/canonet-28-14.webp" alt="">
+        <img src="images/canonet-28-15.webp" alt="">
+        <img src="images/canonet-28-17.webp" alt="">
+    </div>
+</section>
+
+<main class="product container">
+
+    <h2>All the Accesories</h2>
+
+    <div class="product-content">
+
+        <div class="product-1">
+            <img src="images/canonet-28-1.webp" alt="">
+            <div class="product-txt">
+                <h3>Camera</h3>
+                <div class="price">
+                    <p>$500</p>
+                    <a href="#" class="btn-2">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="images/lens.jpg" alt="">
+            <div class="product-txt">
+                <h3>Lens</h3>
+                <div class="price">
+                    <p>$50</p>
+                    <a href="#" class="btn-2">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="images/case.jpg" alt="">
+            <div class="product-txt">
+                <h3>Flash</h3>
+                <div class="price">
+                    <p>$100</p>
+                    <a href="#" class="btn-2">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="images/film70_b.jpg" alt="">
+            <div class="product-txt">
+                <h3>40 mm Len</h3>
+                <div class="price">
+                    <p>$80</p>
+                    <a href="#" class="btn-2">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="images/film-cartridge-1.jpg" alt="">
+            <div class="product-txt">
+                <h3>Black & White Print Film</h3>
+                <div class="price">
+                    <p>$10</p>
+                    <a href="#" class="btn-2">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+</main>
+
+<section class="contact container">
+
+    <div class="contact-content">
+        <h3>Subscribe</h3>
+        <form>
+            <input type="email" placeholder="Write your email">
+            <input type="submit" class="btn-3" value="Send">
+        </form>
+    </div>
+</section>
+
+<footer class="footer container">
+
+    <div class="link">
+        <a href="#" class="logo">CANON</a>
+    </div>
+
+    <div class="link">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
